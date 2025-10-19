@@ -1,7 +1,7 @@
 *{
-  /* margin: 0;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
 
@@ -18,7 +18,7 @@ body{
   position: relative;
   width: 100%;
   max-width: 1000px;
-  /* min-height: auto; */
+  min-height: auto;
   /* margin: 50px; */
   background:#fff;
   display: grid;
@@ -27,7 +27,8 @@ body{
 }
 
 .container .left_side{
-  /* position: relative; */
+  margin-top: 150px;
+  position: relative;
   background: #003147;
   padding: 40px;
 }
