@@ -9,7 +9,8 @@ body{
   background: lightblue;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   
   padding: 10px;
 }
@@ -23,6 +24,7 @@ body{
   background:#fff;
   display: grid;
   grid-template-columns:1fr 2fr;
+  grid-auto-rows: 1fr;
   box-shadow:0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
