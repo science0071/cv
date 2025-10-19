@@ -30,8 +30,9 @@ body{
   
   position: relative;
   background: #003147;
-  /* padding: 40px; */
-  padding-top: 1500px;
+  padding: 40px;
+  /* padding-top: 1500px; */
+  min-height: 100%;
 }
 
 .profileText{
