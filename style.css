@@ -11,6 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
+  padding: 10px;
 }
 
 .container{
@@ -18,7 +19,7 @@ body{
   width: 100%;
   max-width: 1000px;
   min-height: auto;
-  margin: 50px;
+  /* margin: 50px; */
   background:#fff;
   display: grid;
   grid-template-columns:1fr 2fr;
@@ -234,11 +235,13 @@ p{
   .container{
     margin: 10px;
     grid-template-columns: 1fr;
+    margin: 0;
+    min-height: auto;
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     margin: 10px;
   }
-}
+} */
