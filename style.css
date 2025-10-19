@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100dvh; */
+  
   padding: 10px;
 }
 
@@ -18,7 +18,7 @@ body{
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: auto;
+  min-height: 100dvh;
   /* margin: 50px; */
   background:#fff;
   display: grid;
