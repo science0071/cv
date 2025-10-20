@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  align-items: flex-start;
+  align-items: flex-start; /*VERY IMPORTANT*/
   
   padding: 10px;
 }
@@ -20,11 +20,11 @@ body{
   width: 100%;
   max-width: 1000px;
   min-height: 100vh;
-  /* margin: 50px; */
+  margin: 50px;
   background:#fff;
   display: grid;
   grid-template-columns:1fr 2fr;
-  grid-auto-rows: 1fr;
+  /* grid-auto-rows: 1fr; */
   box-shadow:0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
@@ -33,9 +33,8 @@ body{
   position: relative;
   background: #003147;
   padding: 40px;
-  /* padding-top: 1500px; */
-  /* min-height: 100%; */
-  min-height: 100vh;
+  min-height: 100%;
+  /* min-height: 100vh; */
 }
 
 .profileText{
@@ -234,6 +233,24 @@ p{
   background: #03a9f4;
 }
 
+.interest ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li{
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+
+.interest ul li .fa{
+  color:#03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
 
 /* ================================================ */
 @media (max-width:1000px)
@@ -243,6 +260,25 @@ p{
     grid-template-columns: 1fr;
     margin: 0;
     min-height: auto;
+  }
+  .interest ul{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:600px)
+{
+  .about .box{
+    flex-direction: column;
+  }
+
+  .about .box .year_company{
+    margin-bottom:5px;
+    min-width: 150px;
+  }
+
+  .skills .box {
+    grid-template-columns:1fr;
   }
 }
 
