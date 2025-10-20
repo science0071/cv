@@ -6,7 +6,7 @@
 }
 
 body{
-  background: lightblue;
+  background: #1f1f1f;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -46,14 +46,34 @@ body{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
+
+
+
+
 .profileText .imgBx{
   position: relative;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;   /* مهم: جلوی بیرون زدن تصویر رو می‌گیره */
-  
-  
+  border: 4px solid  #012b3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: borderPulse 1.8s ease-out infinite;
+}
+
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(13, 105, 128, 0.6);
+  }
+  80% {
+    box-shadow: 0 0 0 20px rgba(3, 99, 112, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(55, 140, 63, 0);
+  }
 }
 
 .profileText .imgBx img {
@@ -72,13 +92,18 @@ body{
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6rem; 
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: "Orbitron", sans-serif;
 }
 
 .profileText h2 span{
   font-size: 0.8em;
   font-weight: 200;
+  font-family: "Goldman", sans-serif;
+  font-weight: 200;
+  font-style: normal;
   
 }
 
@@ -107,6 +132,7 @@ body{
   margin: 8px 0px;
 }
 
+
 .contactInfo ul li .icon{
   display: inline-block;
   width: 20px;
@@ -116,7 +142,24 @@ body{
 
 .contactInfo ul li span{
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Monda", sans-serif;
+}
+
+.contactInfo ul li span a{
+  text-decoration: none;   /* حذف خط زیر لینک */
+  color: inherit;          /* رنگ را از المنت والد بگیر */
+  background: none;        /* حذف پس‌زمینه (در صورت وجود) */
+  border: none;            /* حذف هرگونه خط دور */
+  outline: none;           /* حذف کادر فوکوس پیش‌فرض */
+  cursor: pointer;         /* حفظ حالت کلیک‌پذیر */
+  /* z-index: 10; */
+  /* display: inline-block; */
+  font-family: "Monda", sans-serif;
+}
+
+.contactInfo ul li span a:hover{
+  color: yellowgreen; 
 }
 
 .contactInfo.edu li {
@@ -157,7 +200,7 @@ body{
 
 .container .right_side{
   position: relative;
-  background: #fff;
+  background: #fffaef;
   padding: 40px;
 }
 /* ========================================================== */
@@ -222,7 +265,7 @@ p{
   position: relative;
   width: 100%;
   height: 10px;
-  background: #f0f0f0;
+  background: #c2bebe;
 }
 
 .skills .box .precent div{
